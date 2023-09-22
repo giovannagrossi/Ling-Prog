@@ -75,8 +75,9 @@ print(df>3, end= "\n\n") #retorna boleano
 # print(df[df>3]) #meio inútil mas pode ser usado dependendo
 
 print("##### SELEÇÃO CONDICIONAL + MÚLTIPLA #####", "\n\n")
-print(df[df["Nota"]>8]["Temporadas"])
+print(df[df["Nota"]>8]["Temporadas"], end = "\n\n")
 
+print(df[df["Nota"]>8][["Temporadas","Episódios"]], end = "\n\n")
 
-
+print(df[(df["Nota"]>8) & (df["Temporadas"]>3)])
 
